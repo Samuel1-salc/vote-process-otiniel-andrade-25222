@@ -1,0 +1,421 @@
+{
+  "candidato": {
+    "ano_eleicao": 2026,
+    "cargo": "Deputado Estadual",
+    "nome": "OTONIEL ANDRADE",
+    "numero": "25222",
+    "turno": 1,
+    "uf": "TO"
+  },
+  "fonte": {
+    "algoritmo_hash": "SHA-512",
+    "arquivo": "tse-bu-to-2026.zip",
+    "fonte": "TSE — Boletim de Urna 2026, TO, 1º turno",
+    "hash_calculado": "b936b450693c00741226bd1b6c09843c6671e41abafa393ef31606a7038272011b9030ec8d62a8f61d7ff31f532b7979321cac456bef3b44925e0b00026bc614",
+    "url_origem": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_1t_TO_051020261403.zip",
+    "versao_contrato": "1.1.0"
+  },
+  "gerado_em": "2026-10-26T19:18:52.647006Z",
+  "metricas": {
+    "maximo_votos_por_registro": 45,
+    "minimo_votos_por_registro": 1,
+    "municipios": 89,
+    "registros": 1225,
+    "registros_com_secao_agregada": 19,
+    "total_votos": 7180
+  },
+  "status": "aprovado",
+  "subtotais_municipios": {
+    "73083": {
+      "cidade": "PALMEIRANTE",
+      "votos": 1
+    },
+    "73091": {
+      "cidade": "CAMPOS LINDOS",
+      "votos": 3
+    },
+    "73105": {
+      "cidade": "SÃO FÉLIX DO TOCANTINS",
+      "votos": 10
+    },
+    "73113": {
+      "cidade": "LAGOA DO TOCANTINS",
+      "votos": 5
+    },
+    "73121": {
+      "cidade": "BOM JESUS DO TOCANTINS",
+      "votos": 1
+    },
+    "73130": {
+      "cidade": "SANTA MARIA DO TOCANTINS",
+      "votos": 5
+    },
+    "73148": {
+      "cidade": "NOVO ALEGRE",
+      "votos": 21
+    },
+    "73156": {
+      "cidade": "SANDOLÂNDIA",
+      "votos": 3
+    },
+    "73164": {
+      "cidade": "TAIPAS DO TOCANTINS",
+      "votos": 59
+    },
+    "73172": {
+      "cidade": "NOVO JARDIM",
+      "votos": 6
+    },
+    "73202": {
+      "cidade": "ITAPIRATINS",
+      "votos": 1
+    },
+    "73237": {
+      "cidade": "TUPIRATINS",
+      "votos": 1
+    },
+    "73245": {
+      "cidade": "BRASILÂNDIA DO TOCANTINS",
+      "votos": 1
+    },
+    "73261": {
+      "cidade": "PAU D'ARCO",
+      "votos": 1
+    },
+    "73270": {
+      "cidade": "MATEIROS",
+      "votos": 9
+    },
+    "73288": {
+      "cidade": "SÃO BENTO DO TOCANTINS",
+      "votos": 1
+    },
+    "73296": {
+      "cidade": "ESPERANTINA",
+      "votos": 1
+    },
+    "73300": {
+      "cidade": "CARIRI DO TOCANTINS",
+      "votos": 4
+    },
+    "73334": {
+      "cidade": "ARAGOMINAS",
+      "votos": 1
+    },
+    "73369": {
+      "cidade": "JAÚ DO TOCANTINS",
+      "votos": 2
+    },
+    "73377": {
+      "cidade": "SUCUPIRA",
+      "votos": 3
+    },
+    "73385": {
+      "cidade": "LAGOA DA CONFUSÃO",
+      "votos": 10
+    },
+    "73393": {
+      "cidade": "SÃO SALVADOR DO TOCANTINS",
+      "votos": 4
+    },
+    "73407": {
+      "cidade": "LAJEADO",
+      "votos": 1
+    },
+    "73415": {
+      "cidade": "RIO DOS BOIS",
+      "votos": 2
+    },
+    "73431": {
+      "cidade": "RIO DA CONCEIÇÃO",
+      "votos": 35
+    },
+    "73440": {
+      "cidade": "PALMAS",
+      "votos": 574
+    },
+    "73458": {
+      "cidade": "TUPIRAMA",
+      "votos": 2
+    },
+    "73466": {
+      "cidade": "OLIVEIRA DE FÁTIMA",
+      "votos": 18
+    },
+    "73474": {
+      "cidade": "CHAPADA DE AREIA",
+      "votos": 2
+    },
+    "73482": {
+      "cidade": "CHAPADA DA NATIVIDADE",
+      "votos": 4
+    },
+    "73512": {
+      "cidade": "AGUIARNÓPOLIS",
+      "votos": 1
+    },
+    "73547": {
+      "cidade": "SANTA RITA DO TOCANTINS",
+      "votos": 24
+    },
+    "73555": {
+      "cidade": "CRIXÁS DO TOCANTINS",
+      "votos": 38
+    },
+    "73571": {
+      "cidade": "PUGMIL",
+      "votos": 3
+    },
+    "73598": {
+      "cidade": "IPUEIRAS",
+      "votos": 169
+    },
+    "92070": {
+      "cidade": "ALMAS",
+      "votos": 137
+    },
+    "92088": {
+      "cidade": "CASEARA",
+      "votos": 1
+    },
+    "92134": {
+      "cidade": "ALVORADA",
+      "votos": 4
+    },
+    "92185": {
+      "cidade": "DIVINÓPOLIS DO TOCANTINS",
+      "votos": 9
+    },
+    "92240": {
+      "cidade": "GOIANORTE",
+      "votos": 6
+    },
+    "92304": {
+      "cidade": "MARIANÓPOLIS DO TOCANTINS",
+      "votos": 1
+    },
+    "92398": {
+      "cidade": "ARAGUAÇU",
+      "votos": 2
+    },
+    "92401": {
+      "cidade": "NOVA ROSALÂNDIA",
+      "votos": 4
+    },
+    "92410": {
+      "cidade": "ARAGUAÍNA",
+      "votos": 27
+    },
+    "92479": {
+      "cidade": "ARRAIAS",
+      "votos": 1
+    },
+    "92487": {
+      "cidade": "PEQUIZEIRO",
+      "votos": 1
+    },
+    "92509": {
+      "cidade": "PORTO ALEGRE DO TOCANTINS",
+      "votos": 7
+    },
+    "92533": {
+      "cidade": "AURORA DO TOCANTINS",
+      "votos": 2
+    },
+    "92584": {
+      "cidade": "SANTA ROSA DO TOCANTINS",
+      "votos": 72
+    },
+    "92606": {
+      "cidade": "SANTA TEREZA DO TOCANTINS",
+      "votos": 9
+    },
+    "92681": {
+      "cidade": "SÃO VALÉRIO",
+      "votos": 29
+    },
+    "92738": {
+      "cidade": "BREJINHO DE NAZARÉ",
+      "votos": 228
+    },
+    "93114": {
+      "cidade": "COLINAS DO TOCANTINS",
+      "votos": 1
+    },
+    "93211": {
+      "cidade": "COUTO MAGALHÃES",
+      "votos": 5
+    },
+    "93238": {
+      "cidade": "CRISTALÂNDIA",
+      "votos": 45
+    },
+    "93416": {
+      "cidade": "DIANÓPOLIS",
+      "votos": 143
+    },
+    "93459": {
+      "cidade": "DOIS IRMÃOS DO TOCANTINS",
+      "votos": 1
+    },
+    "93653": {
+      "cidade": "FORMOSO DO ARAGUAIA",
+      "votos": 14
+    },
+    "93858": {
+      "cidade": "GURUPI",
+      "votos": 92
+    },
+    "94170": {
+      "cidade": "ITAPORÃ DO TOCANTINS",
+      "votos": 3
+    },
+    "94617": {
+      "cidade": "MIRACEMA DO TOCANTINS",
+      "votos": 6
+    },
+    "94633": {
+      "cidade": "MIRANORTE",
+      "votos": 4
+    },
+    "94692": {
+      "cidade": "MONTE DO CARMO",
+      "votos": 446
+    },
+    "94811": {
+      "cidade": "NATIVIDADE",
+      "votos": 85
+    },
+    "95192": {
+      "cidade": "PARAÍSO DO TOCANTINS",
+      "votos": 14
+    },
+    "95214": {
+      "cidade": "PARANÃ",
+      "votos": 37
+    },
+    "95257": {
+      "cidade": "PEDRO AFONSO",
+      "votos": 8
+    },
+    "95273": {
+      "cidade": "PEIXE",
+      "votos": 1
+    },
+    "95290": {
+      "cidade": "COLMÉIA",
+      "votos": 6
+    },
+    "95338": {
+      "cidade": "GOIATINS",
+      "votos": 1
+    },
+    "95370": {
+      "cidade": "PINDORAMA DO TOCANTINS",
+      "votos": 128
+    },
+    "95516": {
+      "cidade": "PONTE ALTA DO BOM JESUS",
+      "votos": 13
+    },
+    "95532": {
+      "cidade": "PONTE ALTA DO TOCANTINS",
+      "votos": 146
+    },
+    "95591": {
+      "cidade": "PORTO NACIONAL",
+      "votos": 4037
+    },
+    "95699": {
+      "cidade": "LIZARDA",
+      "votos": 1
+    },
+    "96156": {
+      "cidade": "TAGUATINGA",
+      "votos": 29
+    },
+    "96199": {
+      "cidade": "TOCANTÍNIA",
+      "votos": 1
+    },
+    "96210": {
+      "cidade": "TOCANTINÓPOLIS",
+      "votos": 1
+    },
+    "96270": {
+      "cidade": "GUARAÍ",
+      "votos": 160
+    },
+    "96490": {
+      "cidade": "PALMEIRÓPOLIS",
+      "votos": 1
+    },
+    "96598": {
+      "cidade": "SILVANÓPOLIS",
+      "votos": 62
+    },
+    "96636": {
+      "cidade": "NOVA OLINDA",
+      "votos": 1
+    },
+    "96652": {
+      "cidade": "WANDERLÂNDIA",
+      "votos": 1
+    },
+    "96679": {
+      "cidade": "FIGUEIRÓPOLIS",
+      "votos": 5
+    },
+    "96792": {
+      "cidade": "RIO SONO",
+      "votos": 5
+    },
+    "96830": {
+      "cidade": "FÁTIMA",
+      "votos": 60
+    },
+    "96857": {
+      "cidade": "AUGUSTINÓPOLIS",
+      "votos": 1
+    },
+    "96954": {
+      "cidade": "ALIANÇA DO TOCANTINS",
+      "votos": 50
+    }
+  },
+  "verificacoes": [
+    {
+      "regra": "conjunto_nao_vazio",
+      "status": "aprovado"
+    },
+    {
+      "regra": "identidade_eleitoral",
+      "status": "aprovado"
+    },
+    {
+      "regra": "chave_unica",
+      "status": "aprovado"
+    },
+    {
+      "regra": "votos_validos",
+      "status": "aprovado"
+    },
+    {
+      "regra": "municipio_consistente",
+      "status": "aprovado"
+    },
+    {
+      "regra": "secao_agregada",
+      "status": "aprovado"
+    },
+    {
+      "regra": "reconciliacao",
+      "status": "aprovado"
+    },
+    {
+      "regra": "baseline",
+      "status": "aprovado"
+    }
+  ],
+  "versao_contrato": "1.1.0"
+}

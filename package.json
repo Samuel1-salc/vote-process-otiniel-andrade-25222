@@ -1,0 +1,8 @@
+{
+  "name": "consulta-votos-otoniel",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test:web": "node tests/web/data-model.test.mjs"
+  }
+}

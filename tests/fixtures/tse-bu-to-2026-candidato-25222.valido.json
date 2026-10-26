@@ -1,0 +1,35 @@
+{
+  "descricao": "Registro real reduzido do BU oficial, usado como referência de mapeamento.",
+  "fonte": {
+    "ANO_ELEICAO": 2026,
+    "NR_TURNO": 1,
+    "CD_ELEICAO": 6259,
+    "DS_ELEICAO": "Eleições Gerais Estaduais 2026",
+    "SG_UF": "TO",
+    "CD_MUNICIPIO": 94811,
+    "NM_MUNICIPIO": "NATIVIDADE",
+    "NR_ZONA": 19,
+    "NR_SECAO": 81,
+    "CD_CARGO_PERGUNTA": 7,
+    "DS_CARGO_PERGUNTA": "Deputado Estadual",
+    "CD_TIPO_VOTAVEL": 1,
+    "DS_TIPO_VOTAVEL": "Nominal",
+    "NR_VOTAVEL": 25222,
+    "NM_VOTAVEL": "OTONIEL ANDRADE",
+    "QT_VOTOS": 4,
+    "DS_SECOES_AGREGADAS": "#NULO#"
+  },
+  "esperado": {
+    "cidade": "NATIVIDADE",
+    "codigo_municipio_tse": "94811",
+    "zona_eleitoral": "19",
+    "secao": "81",
+    "votos": 4,
+    "numero_candidato": "25222",
+    "nome_candidato": "OTONIEL ANDRADE",
+    "cargo": "Deputado Estadual",
+    "uf": "TO",
+    "ano_eleicao": 2026,
+    "turno": 1
+  }
+}

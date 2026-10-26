@@ -1,0 +1,7 @@
+# Arquivos oficiais grandes obtidos em tempo de execução.
+data/raw/
+
+# Ambiente e caches locais do Python.
+.venv/
+__pycache__/
+*.py[cod]

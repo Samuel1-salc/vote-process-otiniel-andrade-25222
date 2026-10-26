@@ -1,0 +1,39 @@
+# Skills do projeto
+
+## create-plan
+
+Use esta skill quando o usuário solicitar explicitamente um plano para uma tarefa de desenvolvimento.
+
+### Regras
+
+- Trabalhe em modo somente leitura: não crie, altere ou exclua arquivos.
+- Leia rapidamente `README.md`, documentos em `docs/` e os arquivos diretamente relacionados à tarefa.
+- Faça no máximo duas perguntas, apenas quando uma resposta for indispensável ao plano.
+- Entregue um único plano acionável na resposta final, sem prefácios.
+
+### Formato obrigatório
+
+```markdown
+# Plan
+
+<1–3 frases: o que será feito, por que e a abordagem.>
+
+## Scope
+- In:
+- Out:
+
+## Action items
+[ ] <Passo 1>
+[ ] <Passo 2>
+[ ] <Passo 3>
+[ ] <Passo 4>
+[ ] <Passo 5>
+[ ] <Passo 6>
+
+## Open questions
+- <Pergunta 1>
+- <Pergunta 2>
+- <Pergunta 3>
+```
+
+Os itens devem ser atômicos, ordenados, iniciados por verbo e incluir validação/testes e riscos quando aplicável.

@@ -1,0 +1,35 @@
+# Instruções para agentes
+
+## Projeto
+
+O projeto processa dados oficiais de Boletim de Urna do TSE para apresentar a votação de Otoniel Andrade (número 25222), candidato a Deputado Estadual no Tocantins, Eleições Gerais de 2026.
+
+## Regras de dados
+
+- Use exclusivamente fontes oficiais do TSE.
+- Preserve a rastreabilidade: URL de origem, hash SHA-2, data de processamento e versão do contrato de dados.
+- Filtre por UF `TO`, cargo `Deputado Estadual`, candidato `25222` e turno definido.
+- Trate número do candidato, zona e seção como texto, para preservar zeros à esquerda.
+- Não altere manualmente dados eleitorais; qualquer transformação deve ser reproduzível e validada.
+
+## Saídas previstas
+
+- Dataset tratado por cidade, zona eleitoral e seção.
+- Planilha XLSX para distribuição e auditoria.
+- Dataset estático para consumo no HTML.
+- Página HTML com filtros por cidade, zona eleitoral e seção, além do total dinâmico de votos.
+
+## Qualidade
+
+- Falhe explicitamente quando o layout da fonte estiver incompatível ou campos obrigatórios estiverem ausentes.
+- Valide tipos, valores não negativos, duplicidades e totalização antes de publicar artefatos.
+- Mantenha o escopo restrito ao candidato e à eleição definidos.
+- Consulte `PLANEJAMENTO_CORE_TSE_2026.md` e os arquivos em `issues/` antes de iniciar uma issue.
+
+## Atualização das issues
+
+- Ao encerrar qualquer execução de uma issue, atualize o arquivo correspondente em `issues/`.
+- Marque com `[x]` somente os itens efetivamente concluídos e mantenha `[ ]` nos itens pendentes.
+- Atualize o campo `Status` para refletir o resultado real: planejada, em andamento, parcialmente concluída, concluída ou bloqueada.
+- Registre testes, validações, resultados e impedimentos observados durante a execução.
+- A regra se aplica mesmo quando a issue não puder ser concluída integralmente.

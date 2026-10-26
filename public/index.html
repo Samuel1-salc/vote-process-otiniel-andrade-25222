@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Consulta da votação de Otoniel Andrade por cidade, zona e seção eleitoral no Tocantins.">
+    <meta name="theme-color" content="#102a43">
+    <title>Consulta de votação — Otoniel Andrade</title>
+    <link rel="stylesheet" href="./assets/styles.css">
+    <script type="module" src="./js/app.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+    <header class="hero">
+      <div class="page-shell hero__inner">
+        <div>
+          <p class="eyebrow"><span class="eyebrow__dot" aria-hidden="true"></span> Dados oficiais do TSE</p>
+          <h1 id="candidate-name">Carregando candidatura…</h1>
+          <p class="hero__subtitle" id="candidate-context">Preparando os dados eleitorais</p>
+        </div>
+        <div class="hero__mark" aria-hidden="true">
+          <span id="election-state">—</span>
+          <small id="election-year">—</small>
+        </div>
+      </div>
+    </header>
+
+    <main id="conteudo" class="page-shell main-content">
+      <p id="app-status" class="status-message" role="status" aria-live="polite">
+        Carregando dados da votação…
+      </p>
+
+      <noscript>
+        <div class="message-card message-card--error">
+          Esta consulta requer JavaScript para carregar e paginar os dados eleitorais.
+        </div>
+      </noscript>
+
+      <section id="summary-section" aria-labelledby="summary-title" hidden>
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">Visão geral</p>
+            <h2 id="summary-title">Resumo da votação</h2>
+          </div>
+          <span class="verified-badge">Base validada</span>
+        </div>
+
+        <div class="summary-grid">
+          <article class="summary-card summary-card--primary">
+            <p>Total de votos</p>
+            <strong id="summary-votes">—</strong>
+            <span>Votação nominal contabilizada</span>
+          </article>
+          <article class="summary-card">
+            <p>Municípios</p>
+            <strong id="summary-cities">—</strong>
+            <span>Com registro para o candidato</span>
+          </article>
+          <article class="summary-card">
+            <p>Unidades de apuração</p>
+            <strong id="summary-records">—</strong>
+            <span>Linhas oficiais por seção</span>
+          </article>
+          <article class="summary-card">
+            <p>Seções agregadas</p>
+            <strong id="summary-aggregated">—</strong>
+            <span>Unidades com agregação informada</span>
+          </article>
+        </div>
+      </section>
+
+      <section id="data-section" class="data-section" aria-labelledby="data-title" hidden>
+        <div class="section-heading section-heading--table">
+          <div>
+            <p class="section-kicker">Detalhamento</p>
+            <h2 id="data-title">Votos por cidade, zona e seção</h2>
+            <p class="section-description">
+              Cada linha representa uma unidade de apuração publicada pelo TSE.
+            </p>
+          </div>
+          <a class="download-link" href="./downloads/otoniel_andrade_25222_TO_2026.xlsx" download>
+            <span aria-hidden="true">↓</span> Baixar planilha XLSX
+          </a>
+        </div>
+
+        <form id="filter-form" class="filter-panel">
+          <fieldset>
+            <legend>Filtrar unidades de apuração</legend>
+            <div class="filter-grid">
+              <div class="filter-field filter-field--search">
+                <label for="city-search">Pesquisar cidade</label>
+                <input
+                  id="city-search"
+                  name="q"
+                  type="search"
+                  inputmode="search"
+                  autocomplete="off"
+                  placeholder="Digite o nome da cidade"
+                >
+              </div>
+              <div class="filter-field">
+                <label for="city-filter">Cidade</label>
+                <select id="city-filter" name="cidade">
+                  <option value="">Todas as cidades</option>
+                </select>
+              </div>
+              <div class="filter-field">
+                <label for="zone-filter">Zona eleitoral</label>
+                <select id="zone-filter" name="zona">
+                  <option value="">Todas as zonas</option>
+                </select>
+              </div>
+              <div class="filter-field">
+                <label for="section-filter">Seção</label>
+                <select id="section-filter" name="secao">
+                  <option value="">Todas as seções</option>
+                </select>
+              </div>
+              <button id="clear-filters" class="clear-filters" type="button" disabled>
+                Limpar filtros
+              </button>
+            </div>
+          </fieldset>
+        </form>
+
+        <section id="filtered-summary" class="filtered-summary" aria-labelledby="filtered-summary-title" aria-live="polite">
+          <div>
+            <p class="section-kicker">Resultado do recorte</p>
+            <h3 id="filtered-summary-title">Todos os registros</h3>
+            <p id="active-filter-description">Nenhum filtro aplicado</p>
+          </div>
+          <dl>
+            <div><dt>Votos</dt><dd id="filtered-votes">—</dd></div>
+            <div><dt>Registros</dt><dd id="filtered-records">—</dd></div>
+            <div><dt>Municípios</dt><dd id="filtered-cities">—</dd></div>
+          </dl>
+        </section>
+
+        <section id="filter-empty-state" class="message-card filter-empty" aria-labelledby="filter-empty-title" hidden>
+          <h3 id="filter-empty-title">Nenhum resultado para este recorte</h3>
+          <p>Altere a seleção ou limpe os filtros para voltar à listagem completa.</p>
+          <button id="clear-empty-filters" type="button">Limpar filtros</button>
+        </section>
+
+        <div id="table-card" class="table-card">
+          <div class="table-scroll" tabindex="0" aria-label="Tabela de votação com rolagem horizontal">
+            <table>
+              <caption>Votação nominal de Otoniel Andrade por unidade de apuração</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Cidade</th>
+                  <th scope="col">Zona eleitoral</th>
+                  <th scope="col">Seção</th>
+                  <th scope="col">Seções agregadas</th>
+                  <th scope="col" class="numeric-column">Votos</th>
+                </tr>
+              </thead>
+              <tbody id="votes-body"></tbody>
+            </table>
+          </div>
+
+          <nav class="pagination" aria-label="Paginação da votação">
+            <p id="page-range">—</p>
+            <div class="pagination__buttons">
+              <button id="previous-page" type="button" disabled>← Anterior</button>
+              <span id="page-number" aria-live="polite">Página —</span>
+              <button id="next-page" type="button" disabled>Próxima →</button>
+            </div>
+          </nav>
+        </div>
+      </section>
+
+      <section id="empty-state" class="message-card" aria-labelledby="empty-title" hidden>
+        <h2 id="empty-title">Nenhum registro disponível</h2>
+        <p>O arquivo foi carregado, mas não contém linhas de votação para exibir.</p>
+      </section>
+
+      <section id="error-state" class="message-card message-card--error" aria-labelledby="error-title" hidden>
+        <h2 id="error-title">Não foi possível carregar os dados</h2>
+        <p>Verifique o arquivo publicado e tente novamente.</p>
+        <button id="retry-button" type="button">Tentar novamente</button>
+      </section>
+
+      <aside id="source-section" class="source-card" aria-labelledby="source-title" hidden>
+        <div>
+          <p class="section-kicker">Rastreabilidade</p>
+          <h2 id="source-title">Origem e integridade</h2>
+        </div>
+        <dl>
+          <div><dt>Fonte</dt><dd id="source-name">—</dd></div>
+          <div><dt>Dataset gerado em</dt><dd id="generated-at">—</dd></div>
+          <div><dt>Contrato</dt><dd id="contract-version">—</dd></div>
+          <div><dt>Schema</dt><dd id="schema-version">—</dd></div>
+        </dl>
+        <p class="aggregation-note">
+          Quando há seção agregada, os votos pertencem à unidade conjunta de apuração e não são
+          repartidos artificialmente entre as seções.
+        </p>
+        <a id="source-link" class="source-link" href="#" target="_blank" rel="noopener noreferrer">
+          Consultar fonte oficial no TSE ↗
+        </a>
+      </aside>
+    </main>
+
+    <footer>
+      <div class="page-shell footer__inner">
+        <p>Consulta construída a partir do Boletim de Urna oficial do TSE.</p>
+        <p>Dados preservados sem alteração manual.</p>
+      </div>
+    </footer>
+  </body>
+</html>
